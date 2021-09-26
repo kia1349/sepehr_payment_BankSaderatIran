@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sepehr</string>
+    <string name="payment_description">(Sepehr secure payment gateway)</string>
+    <string name="payment_amount">payment amount: </string>
+    <string name="customer_phone">customer phone: </string>
+    <string name="payment_result">(payment result)</string>
+    <string name="invalid_sepehrpay_Amount"> The amount should be more than 1000 Rials </string>
+    <string name="custom_message">The page is loading. please wait … </string>
+    <string name="processing"> Processing… </string>
+    <string name="please_wait"> Please Wait… </string>
+    <string name="please_fill_all_data"> Please fill all fields… </string>
+    <string name="amount_hint"> amount(toman) </string>
+    <string name="phone_hint"> customer mobile </string>
+
+</resources>

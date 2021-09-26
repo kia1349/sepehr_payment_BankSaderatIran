@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sepehr</string>
+    <string name="payment_description">(درگاه پرداخت ایمن سپهر)</string>
+    <string name="payment_amount">مبلغ پرداختی</string>
+    <string name="customer_phone">موبایل مشتری</string>
+    <string name="payment_result">(نتیجه تراکنش)</string>
+    <string name="invalid_sepehrpay_Amount"> مبلغ تراکنش میبایست بزرگتر از 1000 ریال باشد </string>
+    <string name="custom_message"> صفحه در حال بارگذاری میباشد . لطفا صبر کنید … </string>
+    <string name="processing"> پردازش … </string>
+    <string name="please_wait"> لطفا صبر کنید … </string>
+    <string name="please_fill_all_data"> لطفا همه فیلدها را وارد کنید … </string>
+    <string name="amount_hint"> مبلغ(تومان) </string>
+    <string name="phone_hint"> موبایل مشتری </string>
+
+</resources>
