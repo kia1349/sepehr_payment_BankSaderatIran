@@ -166,9 +166,9 @@ IRANSans;color:#444444'>همچنین از طریق درگاه پرداخت ال�
 خاص از طريق صورتحساب ويژه بانك صادرات ايران میسر می باشد که این امکانات از طریق
 مراجعه به سایت شرکت پرداخت الکترونیک سپهر(بانک صادرات ایران) </span><span
 style='font-size:10.5pt;line-height:107%;font-family:IRANSans;color:#444444'><a
-href="https://www.sepehrpay.co"><span dir=LTR>https://www.sepehrpay.co</span></a></span><span
+href="https://www.sepehrpay.com"><span dir=LTR>https://www.sepehrpay.com</span></a></span><span
 dir=LTR style='font-size:10.5pt;line-height:107%;font-family:"Cambria",serif;
-color:#444444'>m</span><span dir=RTL></span><span style='font-size:10.5pt;
+color:#444444'></span><span dir=RTL></span><span style='font-size:10.5pt;
 line-height:107%;font-family:IRANSans;color:#444444'><span dir=RTL></span> <span
 lang=AR-SA>قابل دریافت می باشد.</span></span></p>
 
