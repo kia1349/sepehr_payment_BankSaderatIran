@@ -485,6 +485,21 @@ color:#444444'>&nbsp;</span></p>
 </div>
 </div>
 
+ <div dir="rtl">
+ ## توسعه
+</div>
+
+<p dir="rtl">
+ اگر از این بسته استفاده می کنید و خوشتون اومده با دادن ستاره به ما دلگرمی بدید.البته که اگر زمان بگذارید و گسترش بدید خیلی استقبال می کنیم و خوشحال میشیم. البته که در هیچ کدوم از این موارد اصراری نیست. 
+</p>
+<p dir="rtl">
+ شاد باشید و خندون
+</p>
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
+ 
 </body>
 
 </html>
