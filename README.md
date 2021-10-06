@@ -349,7 +349,13 @@ dir=RTL></span> می باشد استفاده شده است.</span></p>
 embed'><b><span lang=AR-SA style='font-size:20.0pt;line-height:107%;font-family:
 IRANSans;color:#444444'>برای توضیحات بیشتر و درک بهتر برنامه، فیلم آموزش و
 توضیح این مثال نیز طراحی شده که از طریق لینک زیر قابل دانلود است:</span></b></p>
+ 
+ <div dir="rtl">  
 
+  <a href="https://aparat.com/v/ngufY"><span style='font-size:10.5pt;
+line-height:107%;font-family:IRANSans;color:#444444;text-decoration:none'>آپارات</span></a>
+ </div>
+ 
 <p class=MsoNormal dir=RTL style='text-align:right;direction:rtl;unicode-bidi:
 embed'><span lang=AR-SA style='font-size:10.5pt;line-height:107%;font-family:
 IRANSans;color:#444444'>اطلاعات موردنیاز جهت خرید اینترنتی چیست ؟</span></p>
