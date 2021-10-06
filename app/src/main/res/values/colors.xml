@@ -62,7 +62,6 @@
     <color name="grey">#c3c3c3</color>
     <color name="grey_light">#eeeeee</color>
     <color name="grey_lighter">#ededed</color>
-    <color name="grey_trans">#7F000000</color>
     <!-- Translucent -->
     <color name="black_translucent">#aa000000</color>
     <color name="black_more_translucent">#99000000</color>

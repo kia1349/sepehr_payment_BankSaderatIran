@@ -45,24 +45,24 @@
                     android:scheme="aryaclub" />
             </intent-filter>
 
-            <!--me add for complete information about scheme,host and pathPrefix-->
-            <!--            &lt;!&ndash; must start with http://test.example.com/app &ndash;&gt;-->
-            <!--            &lt;!&ndash; http://test.example.com/ won't work since prefix / is in a different intent-filter &ndash;&gt;-->
-            <!--            <data android:scheme="http"-->
-            <!--                android:host="test.example.com"-->
-            <!--                android:pathPrefix="/app"/>-->
+<!--me add for complete information about scheme,host and pathPrefix-->
+<!--            &lt;!&ndash; must start with http://test.example.com/app &ndash;&gt;-->
+<!--            &lt;!&ndash; http://test.example.com/ won't work since prefix / is in a different intent-filter &ndash;&gt;-->
+<!--            <data android:scheme="http"-->
+<!--                android:host="test.example.com"-->
+<!--                android:pathPrefix="/app"/>-->
 
-            <!--            &lt;!&ndash; must start with http://live.example.com/app &ndash;&gt;-->
-            <!--            <data android:scheme="http"-->
-            <!--                android:host="live.example.com"-->
-            <!--                android:pathPrefix="/app"/>-->
-            <!--            -->
-            <!--            &lt;!&ndash; must start with example://main/ &ndash;&gt;-->
-            <!--            &lt;!&ndash; http://test.example.com/ won't work since http is in a different intent-filter &ndash;&gt;-->
-            <!--            <data android:scheme="example"-->
-            <!--                android:host="main"-->
-            <!--                android:pathPrefix="/"/>-->
-            <!--me end for complete information about scheme,host and pathPrefix-->
+<!--            &lt;!&ndash; must start with http://live.example.com/app &ndash;&gt;-->
+<!--            <data android:scheme="http"-->
+<!--                android:host="live.example.com"-->
+<!--                android:pathPrefix="/app"/>-->
+<!--            -->
+<!--            &lt;!&ndash; must start with example://main/ &ndash;&gt;-->
+<!--            &lt;!&ndash; http://test.example.com/ won't work since http is in a different intent-filter &ndash;&gt;-->
+<!--            <data android:scheme="example"-->
+<!--                android:host="main"-->
+<!--                android:pathPrefix="/"/>-->
+<!--me end for complete information about scheme,host and pathPrefix-->
 
 
         </activity>
