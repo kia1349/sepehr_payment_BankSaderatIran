@@ -49,11 +49,11 @@
             android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_textview"
             android:gravity="center"
-            android:text="@string/payment_description"
             android:shadowColor="@color/grey_trans"
             android:shadowDx="7"
             android:shadowDy="7"
             android:shadowRadius="3.5"
+            android:text="@string/payment_description"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -75,14 +75,14 @@
                 android:background="@drawable/rounded_textview"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="@string/payment_amount"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:shadowColor="@color/grey_trans"
                 android:shadowDx="7"
                 android:shadowDy="7"
                 android:shadowRadius="3.5"
+                android:text="@string/payment_amount"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/checkout_subtotal"
                 app:layout_constraintEnd_toStartOf="@+id/checkout_subtotal"
                 app:layout_constraintHorizontal_weight="5"
@@ -129,14 +129,14 @@
                 android:background="@drawable/rounded_textview"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="@string/customer_phone"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:shadowColor="@color/grey_trans"
                 android:shadowDx="7"
                 android:shadowDy="7"
                 android:shadowRadius="3.5"
+                android:text="@string/customer_phone"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/customer_phone"
                 app:layout_constraintEnd_toStartOf="@+id/customer_phone"
                 app:layout_constraintHorizontal_weight="5"
@@ -189,23 +189,39 @@
             android:layout_margin="10dp"
             android:background="@drawable/rounded_textview"
             android:gravity="center"
-            android:text="@string/payment_result"
             android:shadowColor="@color/grey_trans"
             android:shadowDx="7"
             android:shadowDy="7"
             android:shadowRadius="3.5"
+            android:text="@string/payment_result"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <WebView
+        <!--        <WebView-->
+        <!--            android:id="@+id/payment_result"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            android:layout_marginBottom="2dp"-->
+        <!--            android:background="@drawable/rounded_edittext" >-->
+        <!--    </WebView>-->
+
+        <TextView
             android:id="@+id/payment_result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="2dp"
-            android:background="@drawable/rounded_edittext" />
+            android:background="@drawable/rounded_textview"
+            android:gravity="start"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

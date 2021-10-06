@@ -1,5 +1,7 @@
 package com.sepehrpayment.ipg.main;
 
+import static android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -13,8 +15,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -32,8 +32,6 @@ import com.google.android.material.snackbar.Snackbar;
 import com.sepehrpayment.ipg.R;
 import com.sepehrpayment.ipg.constant.ConstantValues;
 
-import static android.view.inputmethod.InputMethodManager.RESULT_UNCHANGED_SHOWN;
-
 public class MainFragment extends Fragment {
 
     //sepehrpay variables
@@ -47,7 +45,8 @@ public class MainFragment extends Fragment {
     View rootView;
     ImageButton checkout_payment_btn;
     EditText checkout_subtotal, customer_phone;
-    WebView payment_result;
+    TextView payment_result;
+    //    WebView payment_result;
     int semiTransparentGrey = Color.argb(175, 185, 185, 185);
     private final TextWatcher watcher = new TextWatcher() {
         @Override
@@ -102,13 +101,14 @@ public class MainFragment extends Fragment {
 //                        snackbar.show();
 
                         payment_result.setVisibility(View.VISIBLE);
-                        ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW.replace("\\", "");
-
-                        if (ConstantValues.LANGUAGE_DIRECTION.equals("rtl")) {
-                            payment_result.loadDataWithBaseURL(null, "<html dir=\"rtl\" lang=\"\"><body>" + styleSheet + ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW + "</body></html>", "text/html", "utf-8", null);
-                        } else {
-                            payment_result.loadDataWithBaseURL(null, styleSheet + ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW, "text/html", "utf-8", null);
-                        }
+//                        ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW.replace("\\", "");
+//
+//                        if (ConstantValues.LANGUAGE_DIRECTION.equals("rtl")) {
+//                            payment_result.loadDataWithBaseURL(null, "<html dir=\"rtl\" lang=\"\"><body>" + styleSheet + ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW + "</body></html>", "text/html", "utf-8", null);
+//                        } else {
+//                            payment_result.loadDataWithBaseURL(null, styleSheet + ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW, "text/html", "utf-8", null);
+//                        }
+                        payment_result.setText(ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY);
                         checkout_payment_btn.setEnabled(false);
                         checkout_payment_btn.setColorFilter(Color.WHITE);
                         checkout_subtotal.setText("");
@@ -142,8 +142,8 @@ public class MainFragment extends Fragment {
         checkout_payment_btn.setColorFilter(Color.WHITE);
 
         payment_result = rootView.findViewById(R.id.payment_result);
-        payment_result.getSettings().setJavaScriptEnabled(true);
-        payment_result.setWebViewClient(new WebViewClient());
+//        payment_result.getSettings().setJavaScriptEnabled(true);
+//        payment_result.setWebViewClient(new WebViewClient());
         payment_result.setVisibility(View.GONE);
 
 
@@ -181,7 +181,7 @@ public class MainFragment extends Fragment {
 
                 // Delay of 2 seconds
                 hideKeyboard(view);
-                payment_result.loadDataWithBaseURL(null, "<html dir=\"rtl\" lang=\"\"><body>" + styleSheet + " " + "</body></html>", "text/html", "utf-8", null);
+//                payment_result.loadDataWithBaseURL(null, "<html dir=\"rtl\" lang=\"\"><body>" + styleSheet + " " + "</body></html>", "text/html", "utf-8", null);
                 payment_result.setVisibility(View.GONE);
 
                 //get amount
