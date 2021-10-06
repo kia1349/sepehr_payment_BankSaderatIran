@@ -20,10 +20,10 @@
         android:contentDescription="@string/custom_message"
         android:scaleType="fitCenter" />
 
-    <!--    <view-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="1dp"-->
-    <!--        android:background="#000000" />-->
+<!--    <view-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#000000" />-->
 
 
     <TextView
