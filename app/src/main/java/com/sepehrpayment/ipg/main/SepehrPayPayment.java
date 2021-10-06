@@ -39,7 +39,7 @@ public class SepehrPayPayment extends AppCompatActivity {
         Active = 0;
         ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
         ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "";
-//        ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "";
+        ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "";
 
         if (getIntent().hasExtra("Active")) {
             Active = getIntent().getExtras().getInt("Active");//When the intent has "Active" in its parameters, it means that we should take the purchase information and direct the customer to the payment gateway.
@@ -56,7 +56,7 @@ public class SepehrPayPayment extends AppCompatActivity {
             Mobile = getIntent().getExtras().getString("Mobile");
             ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
             ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "انصراف از پرداخت";
-//            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
+            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
 
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                     Uri.parse(LinkSend + "?EcommerceUrl=" + ConstantValues.ECOMMERCE_URL + "&MerchantID=" + MerchantID +
@@ -69,7 +69,7 @@ public class SepehrPayPayment extends AppCompatActivity {
             }
             ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
             ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "انصراف از پرداخت";
-//            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
+            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
 //            finish();
 
             RTLToast.Config.getInstance()
@@ -82,13 +82,13 @@ public class SepehrPayPayment extends AppCompatActivity {
             RTLToast.Config.reset();
             ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
             ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "انصراف از پرداخت";
-//            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
+            ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "انصراف از پرداخت";
         } else {
             if (getIntent().getData() != null && getIntent().getData().getScheme().equalsIgnoreCase("aryaclub")) {
 
                 ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "";
-//                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "";
+                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "";
 
                 Result = getIntent().getData().getQueryParameter("result");
                 level = Integer.parseInt(getIntent().getData().getQueryParameter("level"));
@@ -105,7 +105,7 @@ public class SepehrPayPayment extends AppCompatActivity {
                             case "OK1":
                                 ConstantValues.IS_USER_PAID_SEPEHRPAY = true;
                                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = message + "\n\n" + tracking;
-//                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = message + "<br/>" + tracking;
+                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = message + "<br/>" + tracking;
                                 break;
 
                             case "OK2":
@@ -113,13 +113,13 @@ public class SepehrPayPayment extends AppCompatActivity {
                             case "CANCELL":
                                 ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = message + "\n\n" + tracking;
-//                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = message + "<br/>" + tracking;
+                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = message + "<br/>" + tracking;
                                 break;
 
                             default:
                                 ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "خطای ناشناس";
-//                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "خطای ناشناس";
+                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "خطای ناشناس";
                                 break;
 
                         }
@@ -131,11 +131,13 @@ public class SepehrPayPayment extends AppCompatActivity {
                             case "ERROR3":
                                 ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = message + "\n\n" + tracking;
+                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = message + "\n\n" + tracking;
                                 break;
 
                             default:
                                 ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                                 ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "خطای ناشناس";
+                                ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "خطای ناشناس";
                                 break;
 
                         }
@@ -146,6 +148,7 @@ public class SepehrPayPayment extends AppCompatActivity {
                     Log.e("My App", "Could not parse malformed JSON: \"" + Result + "\"");
                     ConstantValues.IS_USER_PAID_SEPEHRPAY = false;
                     ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY = "خطای ناشناس";
+                    ConstantValues.MESSAGE_USER_PAID_SEPEHRPAY_WEB_VIEW = "خطای ناشناس";
                 }
 
                 if (ConstantValues.IS_USER_PAID_SEPEHRPAY) {
